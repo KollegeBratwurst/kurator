@@ -49,7 +49,7 @@ oberleiste					{
 
 navigation					{
 								top: 100px;
-								position: absolute;
+								position: fixed;
 								left: 130px;
 								list-style: none;
 								
