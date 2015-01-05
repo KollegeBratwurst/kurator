@@ -1,0 +1,367 @@
+/* Die Website ist gegliedert in 3 Bereiche, den oberen Bereich mit allgemeinen Informationen "about" sowie Suche und Mitgliederbereich, die Navigation durch die Artikel, und den eigentlichen Content Bereich, der zwei Zustände hat, die Übersicht und die Ansicht eines einzelnen Artikels. Formatierungen der Hauptelemente ist in beiden Zuständen identisch, lediglich die "sicht tiefweite" in die Information erhöht sich durch den ergänzten Scrollbaren Bereich. Dieser scrollbare Contentbereich ist unterglieder in Drei Spalten pro Informationszeile.*/   
+
+
+
+
+/* Allgemein Styleguide und feste funktionen*/
+
+
+
+
+a:link						{
+								text-decoration: none;
+    							color: black;
+
+							}
+
+
+
+a:visited					{
+								text-decoration: none;
+    							color: black;
+							}
+							
+							
+navigation a:hover			{
+			
+								font-weight: bold;
+			
+							}
+							
+							
+html						{
+								font-size: 15px;
+								font-family: avenir;
+							}
+
+
+
+/* Elemente */
+
+
+
+oberleiste					{
+								font-weight: bold;
+								font-size: 12px;
+							}
+
+
+
+navigation					{
+								top: 100px;
+								position: absolute;
+								left: 130px;
+								list-style: none;
+								
+							}
+
+
+
+content						{
+								position: absolute;
+								top: 290px;
+								left: 245px; 
+								
+							}
+
+
+
+uebersicht					{
+								float: left;
+								display: block;
+								top: 1px;
+								position: relative;
+								width: 700px;
+							}
+
+
+
+ansicht						{
+								width: 900px;
+								
+							}
+
+
+
+tr							{
+								vertical-align: top;
+								
+							}
+							
+							
+
+ersteswort					{
+								font-size: 17px;
+								font-weight: bold;
+								
+							}
+
+
+
+/* Klassen */
+
+
+
+
+.links						{	
+								top: 10px;
+								position: absolute;
+								left: 10px;
+								width: 270px;
+								text-align: left;
+							}
+
+
+
+.rechts						{
+								top: 10px;
+								position: fixed;
+								right: 10px;
+								width: 270px;
+								text-align: right;
+
+							}
+							
+
+.logo						{
+								left: 20px;
+								top: -13px;
+								float: right;
+								position: relative;
+								width: 135;
+								height: 153;
+								
+							}
+
+
+
+.kategorie					{
+								position: relative;
+								top: 8px;
+							}
+
+
+
+.ueberschrift				{
+								position: relative;
+								left: -200px;
+								font-size: 50px;
+								font-weight: bold;
+							
+							}
+
+
+
+.titelbild					{
+								position: absolute;
+								left: -218px;
+								width: 200px;
+								height: 140px;
+								
+							}
+							
+							
+							
+.vollbild					{
+								top: 10px;
+								width: 900px;
+								height: auto;
+								position: relative;
+								
+							}
+							
+							
+							
+.vollvideo					{
+								top: 50px;
+								width: 900px;
+								height: 490;
+								position: relative;
+								
+							}
+							
+							
+							
+.twitter-timeline 			{
+								height: 338px;
+								width:200px;
+								position: relative;
+								top: 30px;
+								left: 60px;
+					
+							}
+
+
+
+.beschreibung				{
+								inhalt
+								inhalt
+							}
+
+
+
+.hashtags					{
+								inhalt
+								inhalt
+							}
+							
+							
+							
+.fliesstext					{
+								text-align: left;	
+								position: relative;
+ 								height: 350px;
+ 								width: 250px;	
+    	
+    							-webkit-column-count: 1;
+    							-webkit-collum-gap: 30px
+    							-webkit-column-rule-color: silver;
+    							-webkit-column-rule-style: solid;
+   								-webkit-column-rule-width: 2px;
+   								-webkit-column-width: 250px;
+   		
+   		 
+    							-moz-column-count: 1;  
+    							-moz-column-gap: 30px;
+    							-moz-column-rule-color: silver;
+    							-moz-column-rule-style: solid;
+    							-moz-column-rule-width: 2px;
+    							-moz-column-width: 250px;
+ 
+    							column-count: 1;  
+    							column-gap: 30px;
+    							column-rule-color: silver;
+    							column-rule-style: solid;
+    							column-rule-width: 2px;
+    							column-width: 250px;
+							}
+
+
+.fliesstextZ1				{
+
+
+		/* webkit für chrome,safari.. moz für firefox */
+
+  
+    						text-align: justify;	
+							position: relative;
+    						font-size: 15px;
+    						height: 300px;
+    						width: 280px;
+    	
+    						-webkit-column-count: 3
+    						-webkit-collum-gap: 30px
+    						-webkit-column-rule-color: silver;
+    						-webkit-column-rule-style: solid;
+   							-webkit-column-rule-width: 1px;
+   							-webkit-column-width: 250px;
+   		
+   		 
+    						-moz-column-count: 3;  
+    						-moz-column-gap: 30px;
+    						-moz-column-rule-color: silver;
+    						-moz-column-rule-style: solid;
+    						-moz-column-rule-width: 1px;
+    						-moz-column-width: 250px;
+ 
+    						column-count: 3;  
+    						column-gap: 30px;
+    						column-rule-color: silver;
+    						column-rule-style: solid;
+    						column-rule-width: 1px;
+    						column-width: 250px;
+
+
+ 
+   		    }
+
+
+
+
+/* IDs - a,b,c bezeichnen die 3 verwendeten spalten auf einer menu unterebene */
+
+
+
+#hauptmenu					{
+								float: left;
+								position: relative;
+								width: 80px;
+								text-align: right;
+							}
+
+
+
+#untermenu					{
+								text-align: right;
+								position: static;
+								left: -200px;
+								width: 100px;
+							}
+
+
+					
+							
+							
+#a							{
+								top: 30px;
+								position: relative;
+								float: left;
+								width: 280px;
+								height: 300px;
+								
+								
+							}
+
+
+
+#ab							{
+								inhalt
+								inhalt
+							}
+
+
+
+#abc						{
+								top: 60px;
+								width: 900px;
+								position: relative;
+							}
+
+
+#abc1						{
+								
+								width: 900px;
+								position: relative;
+							}
+
+
+
+#bc							{
+								inhalt
+								inhalt
+							}
+
+
+
+#c							{
+								inhalt
+								inhalt
+							}
+
+
+
+
+
+
+
+
+/* Vorlage CSS Typo, gliederung des Codes um hier mit copy paste neue elemente hinzuzugügen */
+
+
+dummycss					{
+								inhalt
+								inhalt
+							}
+
+
+
